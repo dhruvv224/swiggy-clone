@@ -5,7 +5,7 @@ import { FaArrowLeft } from "react-icons/fa";
 export const Category = () => {
   return (
     <div className='max-w-[1200px] mx-auto'>
-      <div className='flex items-center justify-between '>
+      <div className='flex items-center justify-between my-7'>
         <div className='text-[#282c3f] text-[40px] font-bold'>
           What's in your mind?
         </div>
