@@ -12,7 +12,7 @@ export const Category = () => {
          
         </div>
 
-        <p>Explore a wide variety of Food to satisfy your cravings.
+        <p className='text-[#282c3f] text-[16px]'>Explore a wide variety of Food to satisfy your cravings.
         </p>
         </div>
        
