@@ -10,7 +10,7 @@ export const Category = () => {
           What's in your mind?
         </div>
         <div className='flex'>
-          <div className='w-[30px] h-[30px] bg-[#e2e2e7] rounded-full mx-2 flex items-center justify-center'>
+          <div className='w-[30px] h-[30px] bg-[#e2e2e7] rounded-full mx-2 flex items-center justify-center cursor-pointer'>
             <FaArrowLeft />
           </div>
           <div className='w-[30px] h-[30px] bg-[#e2e2e7] rounded-full mx-2 flex items-center justify-center'>
