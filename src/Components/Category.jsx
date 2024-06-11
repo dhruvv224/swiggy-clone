@@ -51,9 +51,9 @@ const rightSlide=()=>{
       <div className='flex overflow-hidden'>
         {Category.map((item, index) => (
         
-          <div key={index} style={{transform:`translateX(-${slide *100}%)`}} className='w-[150px] m-4 text-center shrink-0 duration-500'>
+          <div key={index} style={{transform:`translateX(-${slide *100}%)`}} className='w-[150px] m-4 text-center shrink-0 duration-500  cursor-pointer'>
             <img src={item.image} alt={item.path} className='w-full h-auto' />
-            <h1 className='text-[#282c3f] text-[18px] font-medium'>{item.path}</h1>
+            {/* <h1 className='text-[#282c3f] text-[18px] font-medium'>{item.path}</h1> */}
           </div>
          
         ))}
