@@ -6,6 +6,7 @@ import Category from './Components/Category';
 import Sidemenu from './Components/Sidemenu';
 import { useState } from 'react';
 import Category2 from './Components/Category2';
+import Toprestro from './Components/Toprestro';
 function App() {
   const [toggle, setToggle] = useState(false);
 
@@ -23,6 +24,7 @@ function App() {
       <Header showSidemenu={showSidemenu} />
 
       <Category/>
+      <Toprestro/>
       {/* <Category2/> */}
     </div>
   );

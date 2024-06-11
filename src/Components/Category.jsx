@@ -28,13 +28,13 @@ const rightSlide=()=>{
   setSlide(slide + 3)
 }
   return (
-    <div className='max-w-[850px] mx-auto'>
+    <div className='max-w-[1200px] mx-auto my-4'>
       <div className='flex items-center justify-between '>
         <div>
-          <div className='text-[#282c3f] text-[40px] font-bold'>
+          <div className='text-[#282c3f] text-[25px] font-extrabold'>
             What's on your mind?
           </div>
-          <p className='text-[#282c3f] text-[16px]'>
+          <p className='text-[#282c3f] text-[13px]'>
             Explore a wide variety of Food to satisfy your cravings.
           </p>
         </div>
@@ -51,14 +51,14 @@ const rightSlide=()=>{
       <div className='flex md:overflow-hidden'>
         {Category.map((item, index) => (
         
-          <div key={index} style={{transform:`translateX(-${slide *100}%)`}} className='w-[150px] m-4 text-center shrink-0 duration-500  cursor-pointer'>
+          <div key={index} style={{transform:`translateX(-${slide *100}%)`}} className='w-[170px] m-4 text-center shrink-0 duration-500  cursor-pointer'>
             <img src={item.image} alt={item.path} className='w-full h-auto' />
             {/* <h1 className='text-[#282c3f] text-[18px] font-medium'>{item.path}</h1> */}
           </div>
          
         ))}
       </div>
-      <hr className='my-4 border-[2px]'/>
+      <hr className='my-6 border-[2px]'/>
     </div>
   );
 };
