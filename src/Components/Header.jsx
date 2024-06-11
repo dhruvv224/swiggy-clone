@@ -8,24 +8,14 @@ import { IoMdHelpCircleOutline } from "react-icons/io";
 import { BsPersonFill } from "react-icons/bs";
 import { PiShoppingCartSimpleThin } from "react-icons/pi";
 
-export const Header = () => {
-  const [toggle, setToggle] = useState(false);
-  const showSidemenu = () => {
-    setToggle(true);
-  };
-  const hideSidemenu=()=>{
-    setToggle(false)
-  }
+export const Header = ({showSidemenu}) => {
+  
 
   return (
     <>
-      <div 
-        className='fixed w-full h-full duration-500' onClick={hideSidemenu}
-        style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)', opacity: toggle ? 1 : 0, visibility: toggle ? 'visible' : 'hidden' }}
-      ></div>
-      <div className='w-[380px] bg-white h-full absolute duration-500' style={{left:toggle ?'0%':'-100%'}}></div>
+     
       
-      <header className="p-4 shadow-xl  text-[#3d4152]">
+      <header className="p-4 shadow-xl text-[#3d4152]">
         <div className="max-w-[1200px] mx-auto flex items-center p-2 text-[#3d4152] ml-6">
           <div className='w-[35px]'>
             <img src={swiggylogo} alt="Swiggy Logo" className='w-full cursor-pointer hover:scale-125 duration-300' />
@@ -43,29 +33,24 @@ export const Header = () => {
               Swiggy Corporate
             </li>
             <li className='flex items-center cursor-pointer hover:text-[#fc8019] duration-0'>
-            <IoIosSearch className='mr-1' />
-
+              <IoIosSearch className='mr-1' />
               Search
             </li>
             <li className='flex items-center cursor-pointer hover:text-[#fc8019] duration-0'>
-            <CiDiscount1  className='mr-1'/>
-
+              <CiDiscount1 className='mr-1' />
               Offers
               <sup className='text-[#fc8019] text-[10px] font-normal'>NEW</sup>
             </li>
             <li className='flex items-center cursor-pointer hover:text-[#fc8019] duration-0'>
-            <IoMdHelpCircleOutline className='mr-1' />
-
+              <IoMdHelpCircleOutline className='mr-1' />
               Help
             </li>
             <li className='flex items-center cursor-pointer hover:text-[#fc8019] duration-0'>
-            <BsPersonFill className='mr-1'/>
-
+              <BsPersonFill className='mr-1' />
               Sign In
             </li>
             <li className='flex items-center cursor-pointer hover:text-[#fc8019] duration-0'>
-            <PiShoppingCartSimpleThin className='mr-1' />
-
+              <PiShoppingCartSimpleThin className='mr-1' />
               Cart
             </li>
           </nav>
