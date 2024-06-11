@@ -29,7 +29,7 @@ const rightSlide=()=>{
 }
   return (
     <div className='max-w-[1200px] mx-auto'>
-      <div className='flex items-center justify-between my-7'>
+      <div className='flex  my-7 items-center justify-between '>
         <div>
           <div className='text-[#282c3f] text-[40px] font-bold mx-11'>
             What's on your mind?
