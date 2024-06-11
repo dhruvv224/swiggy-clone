@@ -48,7 +48,7 @@ const rightSlide=()=>{
           </div>
         </div>
       </div>
-      <div className='flex overflow-hidden'>
+      <div className='flex md:overflow-hidden'>
         {Category.map((item, index) => (
         
           <div key={index} style={{transform:`translateX(-${slide *100}%)`}} className='w-[150px] m-4 text-center shrink-0 duration-500  cursor-pointer'>
