@@ -50,18 +50,28 @@ fetchData()
       <div className='flex gap-5 overflow-hidden border-red-500'>
         {
             Restrodata.map((item,index)=>(
-                <div key={index} className='w-[273px] py-4 shrink-0 grow'>
+                <div key={index} style={{transform:`translateX(-${slide *100}%)`}} className='w-[273px] py-4 shrink-0 grow cursor-pointer hover:scale-[.95] duration-[105ms]'>
                     <div className='h-[182px] rounded-[15px]  overflow-hidden  relative'>
                     <img src={item.image} className='h-full w-full object-cover' />
                     <div className='image-overlay absolute w-full h-full top-0 flex items-end p-2 text-[25px] font-bold text-white tracking-tighter uppercase'>
                         {item.offer}
                     </div>
                     </div>
-                    <div className='my-2 font-bold text-[18px] text-gray-800 '>
+                    <div className='my-2 font-bold text-[18px] text-gray-700 '>
                         {item.title}
 
                     </div>
-                    <Star className='inline'/>
+                    <div className='flex items-center text-[16px] font-bold text-gray-700'>
+                    <Star className='inline'/> <span className='ml-1 mr-1'>{item.rating}</span> <span>&#8226;</span>
+                    <span className='ml-1'>{item.minTime}-{item.maxTime}</span>
+
+                    </div>
+
+                    <div>
+                        <p className='text-[16px] text-gray-600 font-normal'>{item.name}</p>
+                        <p className='text-[16px] text-gray-600 font-normal'>{item.place}</p>
+
+                        </div>
 
                 </div>
             ))
