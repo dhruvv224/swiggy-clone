@@ -28,10 +28,10 @@ const rightSlide=()=>{
   setSlide(slide + 3)
 }
   return (
-    <div className='w-[1200px] mx-auto'>
-      <div className='flex my-7 items-center justify-center '>
+    <div className='max-w-[1200px] mx-auto'>
+      <div className='flex items-center justify-between '>
         <div>
-          <div className='text-[#282c3f] text-[40px] font-bold mx-11'>
+          <div className='text-[#282c3f] text-[40px] font-bold'>
             What's on your mind?
           </div>
           <p className='text-[#282c3f] text-[16px]'>
