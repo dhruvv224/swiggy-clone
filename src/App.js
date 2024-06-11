@@ -22,8 +22,8 @@ function App() {
 
       <Header showSidemenu={showSidemenu} />
 
-      {/* <Category/> */}
-      <Category2/>
+      <Category/>
+      {/* <Category2/> */}
     </div>
   );
 }
