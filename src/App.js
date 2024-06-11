@@ -5,6 +5,7 @@ import Header from './Components/Header';
 import Category from './Components/Category';
 import Sidemenu from './Components/Sidemenu';
 import { useState } from 'react';
+import Category2 from './Components/Category2';
 function App() {
   const [toggle, setToggle] = useState(false);
 
@@ -21,7 +22,8 @@ function App() {
 
       <Header showSidemenu={showSidemenu} />
 
-      <Category/>
+      {/* <Category/> */}
+      <Category2/>
     </div>
   );
 }

@@ -28,7 +28,7 @@ const rightSlide=()=>{
   setSlide(slide + 3)
 }
   return (
-    <div className='max-w-[1200px] mx-auto'>
+    <div className='max-w-[850px] mx-auto'>
       <div className='flex items-center justify-between '>
         <div>
           <div className='text-[#282c3f] text-[40px] font-bold'>
