@@ -28,8 +28,8 @@ const rightSlide=()=>{
   setSlide(slide + 3)
 }
   return (
-    <div className='max-w-[1200px] mx-auto'>
-      <div className='flex  my-7 items-center justify-between '>
+    <div className='w-[1200px] mx-auto'>
+      <div className='flex my-7 items-center justify-center '>
         <div>
           <div className='text-[#282c3f] text-[40px] font-bold mx-11'>
             What's on your mind?
@@ -58,6 +58,7 @@ const rightSlide=()=>{
          
         ))}
       </div>
+      <hr className='my-4 border-[2px]'/>
     </div>
   );
 };
