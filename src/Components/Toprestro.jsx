@@ -7,15 +7,16 @@ export const Toprestro = () => {
   const [restroData, setRestroData] = useState([]);
 
   const leftSlide = () => {
-    if (slide === 0) return;
+    if (slide === 0) return
+    
     setSlide(slide - 0.5);
   };
 
   const rightSlide = () => {
-    if (slide === restroData.length - 3) return; // Adjust the length check based on the number of visible items
+    // Ensure the check considers the number of visible items and total items
+    if (slide==1.5) return; // Adjust the number 3 based on visible items
     setSlide(slide + 0.5);
   };
-
   const fetchData = () => {
     setRestroData(Restrodata);
   };
@@ -72,8 +73,11 @@ export const Toprestro = () => {
               </div>
             ))}
           </div>
+          <hr className='my-6 border-[2px]'/>
+
         </div>
       </div>
+
     </div>
   );
 };
