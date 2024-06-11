@@ -50,8 +50,8 @@ fetchData()
       <div className='flex gap-5 overflow-hidden border-red-500'>
         {
             Restrodata.map((item,index)=>(
-                <div key={index} className='w-[273px] py-4 shrink-0'>
-                    <div className='h-[182px]  cursor-pointer rounded-[20px] relative'>
+                <div key={index} className='w-[273px] py-4 shrink-0 grow'>
+                    <div className='h-[182px] rounded-[15px]  cursor-pointer  relative'>
                     <img src={item.image} className='h-full w-full object-cover' />
                     <div className='image-overlay absolute w-full h-full top-0 flex items-end p-2 text-[25px] font-bold text-white tracking-tighter uppercase'>
                         {item.offer}
