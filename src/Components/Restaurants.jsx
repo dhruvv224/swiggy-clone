@@ -1,5 +1,5 @@
 import React from 'react';
-
+import restaurents from './Data/RestroChain.json'
 export const Restaurants = () => {
   const buttons = [
     'Sort By',
@@ -44,9 +44,14 @@ export const Restaurants = () => {
           </div>
         </div>
         <div className='grid grid-cols-4 gap-4'>
-          {cardContent.map((content, index) => (
-            <div key={index} className='bg-white p-4 shadow-md rounded-lg'>
-              {content}
+          {restaurents.map((content, index) => (
+            <div key={index} className='w-[273px] cursor-pointer hover:scale-[.95] duration-100 py-4 '>
+              <div className='h-[182px] overflow-hidden rounded-[15px] relative'>
+              <img src={content.image} className='h-full w-full  object-cover'/>
+              <div className='image-overlay absolute w-full h-full top-0 flex items-end p-2 text-[25px] font-bold text-white tracking-tighter uppercase'>
+                    {content.offer}
+                  </div>
+              </div>
             </div>
           ))}
         </div>
