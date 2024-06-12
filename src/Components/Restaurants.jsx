@@ -56,25 +56,36 @@ useEffect(()=>{
             </div>
           </div>
         </div>
-        <div className='grid grid-cols-4 gap-4'>
+        <div className='grid sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4 px-4'>
           {restroData.map((content, index) => (
             <div key={index} className='w-[278px] cursor-pointer hover:scale-[.95] duration-100 py-4 '>
               <div className='h-[185.33px] overflow-hidden rounded-[15px] relative'>
               <img src={content.image} className='h-full w-full  object-cover'/>
               <div className='image-overlay absolute w-full h-full top-0 flex items-end p-2 text-[25px] font-bold text-white tracking-tighter uppercase'>
                     {content.offer}
+                    
                   </div>
-                  <div className='my-2 font-bold text-[18px] text-gray-700'>
-                  {content.title}
-                </div>
-                <div className='flex items-center text-[16px] font-bold text-gray-700'>
-                  <Star className='inline' /> <span className='ml-1 mr-1'>{item.rating}</span> <span>&#8226;</span>
-                  <span className='ml-1'>{item.minTime}-{item.maxTime}</span>
-                </div>
+                  
+                 
               </div>
+              <div className='font-bold text-[18px] text-gray-700'>
+                    
+                    {content.title}
+                  </div>
+                  <div className='flex items-center text-[16px] font-bold text-gray-700'>
+                    <Star className='inline' /> <span className='ml-1 mr-1'>{content.rating}</span> <span>&#8226;</span>
+                    <span className='ml-1'>{content.minTime}-{content.maxTime}</span>
+                  </div>
+                  <div>
+                    <p className='text-[16px] text-gray-600 font-normal'>{content.name}</p>
+                    <p className='text-[16px] text-gray-600 font-normal'>{content.place}</p>
+
+                  </div>
             </div>
           ))}
         </div>
+        <hr className='my-6 border-[2px]'/>
+
       </div>
     </>
   );
