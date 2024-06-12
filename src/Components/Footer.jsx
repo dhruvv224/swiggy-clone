@@ -73,9 +73,13 @@ export const Footer = () => {
                 </div>
 
             </div>
-            
+            <div className='max-w-[500px] text-white text-[15px] font-bold flex items-center'>
+            © Created by Dhruv Parmar
+            </div>
         </div>
+        
     </div>
+    
     </div>
   );
 };
