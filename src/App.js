@@ -8,6 +8,7 @@ import { useState } from 'react';
 import Category2 from './Components/Category2';
 import Toprestro from './Components/Toprestro';
 import Restaurants from './Components/Restaurants';
+import Footer from './Components/Footer';
 function App() {
   const [toggle, setToggle] = useState(false);
 
@@ -27,6 +28,7 @@ function App() {
       <Category/>
       <Toprestro/>
       <Restaurants/>
+      <Footer/>
       {/* <Category2/> */}
     </div>
   );
