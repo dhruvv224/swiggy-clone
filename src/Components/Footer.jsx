@@ -21,7 +21,7 @@ export const Footer = () => {
     </div>
     <div className='footer'>
         <div className='bg-[#02060C] p-4'>
-            <div className='max-w-[900px] mx-auto text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
+            <div className='max-w-[900px] mx-auto text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 '>
                 <div>
                     <Swiggy className="inline"/>
                     <h1 className='text-[26px] font-extrabold text-[#fff]'>Swiggy</h1>
@@ -31,7 +31,7 @@ export const Footer = () => {
                 </div>
                 <div>
                     <h1 className='text-[18px] font-extrabold text-[#ffff]'>Company</h1>
-                    <ul className='mb-2'>
+                    <ul className='mb-2 cursor-pointer'>
             <li className='mt-2 mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>About</li>
             <li className='mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Careers</li>
             <li className='mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Team</li>
@@ -43,7 +43,7 @@ export const Footer = () => {
                 <div>
 
                 <h1 className='text-[18px] font-extrabold text-[#ffff]'>Contact Us</h1>
-                <ul className='mb-2'>
+                <ul className='mb-2 cursor-pointer'>
                     <li className='mt-2 mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Help & Support</li>
                     <li className='mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Partner With Us</li>
                     <li className='mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Ride With Us</li>
@@ -51,7 +51,7 @@ export const Footer = () => {
 
                 </ul>
                 <h1 className='text-[18px] font-extrabold text-[#ffff]'>Legal</h1>
-                    <ul className='mb-2'>
+                    <ul className='mb-2 cursor-pointer'>
                     <li className='mt-2 mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Terms and Conditions</li>
                     <li className='mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Cookie Policy</li>
                     <li className='mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Privacy Policy</li>
@@ -61,7 +61,7 @@ export const Footer = () => {
                 </div>
                 <div>
                 <h1 className='text-[18px] font-extrabold text-[#ffff]'>We deliver to:</h1>
-                <ul className='mb-2'>
+                <ul className='mb-2 cursor-pointer'>
                     <li className='mb-2 mt-2 text-[16px] font-semibold text-[#FFFFFF99]'>Bangalore</li>
             <li className='mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Gurgaon</li>
             <li className='mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Hyderabad</li>
