@@ -28,7 +28,7 @@ export const Toprestro = () => {
   return (
     <div>
       <div className='max-w-[1200px] mx-auto my-4'>
-        <div className='flex items-center justify-between'>
+        <div className='flex items-center justify-between sm:mx-5'>
           <div>
             <div className='text-[#282c3f] text-[25px] font-extrabold'>
               Top restaurant chains in Ahmedabad
@@ -51,7 +51,7 @@ export const Toprestro = () => {
             {restroData.map((item, index) => (
               <div
                 key={index}
-                className='w-[273px] py-4 shrink-0 grow-0 cursor-pointer hover:scale-[.95] duration-100'
+                className='w-[200px] md:w-[273px] py-4 shrink-0 grow-0 cursor-pointer hover:scale-[.95] duration-100'
               >
                 <div className='h-[182px] rounded-[15px] overflow-hidden relative'>
                   <img src={item.image} className='h-full w-full object-cover' />
