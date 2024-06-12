@@ -23,7 +23,7 @@ export const Footer = () => {
         <div className='bg-[#02060C] p-4'>
             <div className='max-w-[900px] mx-auto text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
                 <div>
-                    <Swiggy/>
+                    <Swiggy className="inline"/>
                     <h1 className='text-[26px] font-extrabold text-[#fff]'>Swiggy</h1>
                     <p className='text-[16px] font-semibold text-[#FFFFFF99]'>
             © 2024 Bundl Technologies Pvt. Ltd
@@ -41,10 +41,27 @@ export const Footer = () => {
           </ul>
                 </div>
                 <div>
-                    hello
+
+                <h1 className='text-[18px] font-extrabold text-[#ffff]'>Contact Us</h1>
+                <ul className='mb-2'>
+                    <li className='mt-2 mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Help & Support</li>
+                    <li className='mt-2 mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Partner With Us</li>
+                    <li className='mt-2 mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Ride With Us</li>
+
+
+                </ul>
+                <h1 className='text-[18px] font-extrabold text-[#ffff]'>Legal</h1>
+                    <ul className='mb-2'>
+                    <li className='mt-2 mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Terms and Conditions</li>
+                    <li className='mt-2 mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Cookie Policy</li>
+                    <li className='mt-2 mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Privacy Policy</li>
+                    <li className='mt-2 mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Investors Reletions</li>
+
+                    </ul>
                 </div>
                 <div>
-                    hello
+                <h1 className='text-[18px] font-extrabold text-[#ffff]'>We deliver to:</h1>
+
                 </div>
 
             </div>
@@ -55,6 +72,8 @@ export const Footer = () => {
   );
 };
 const Swiggy=()=>{
+    <>
+  
     <svg
   width={21}
   height={32}
@@ -96,7 +115,7 @@ const Swiggy=()=>{
     </filter>
   </defs>
 </svg>
-
+</>
 }
 
 export default Footer;
