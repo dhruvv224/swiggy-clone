@@ -21,7 +21,7 @@ export const Footer = () => {
     </div>
     <div className='footer'>
         <div className='bg-[#02060C] p-4'>
-            <div className='max-w-[900px] mx-auto text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 '>
+            <div className='max-w-[900px] mx-auto text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-justify '>
                 <div>
                     <Swiggy className="inline"/>
                     <h1 className='text-[26px] font-extrabold text-[#fff]'>Swiggy</h1>
