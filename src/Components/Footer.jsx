@@ -45,23 +45,31 @@ export const Footer = () => {
                 <h1 className='text-[18px] font-extrabold text-[#ffff]'>Contact Us</h1>
                 <ul className='mb-2'>
                     <li className='mt-2 mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Help & Support</li>
-                    <li className='mt-2 mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Partner With Us</li>
-                    <li className='mt-2 mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Ride With Us</li>
+                    <li className='mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Partner With Us</li>
+                    <li className='mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Ride With Us</li>
 
 
                 </ul>
                 <h1 className='text-[18px] font-extrabold text-[#ffff]'>Legal</h1>
                     <ul className='mb-2'>
                     <li className='mt-2 mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Terms and Conditions</li>
-                    <li className='mt-2 mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Cookie Policy</li>
-                    <li className='mt-2 mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Privacy Policy</li>
-                    <li className='mt-2 mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Investors Reletions</li>
+                    <li className='mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Cookie Policy</li>
+                    <li className='mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Privacy Policy</li>
+                    <li className='mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Investors Reletions</li>
 
                     </ul>
                 </div>
                 <div>
                 <h1 className='text-[18px] font-extrabold text-[#ffff]'>We deliver to:</h1>
-
+                <ul className='mb-2'>
+                    <li className='mb-2 mt-2 text-[16px] font-semibold text-[#FFFFFF99]'>Bangalore</li>
+            <li className='mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Gurgaon</li>
+            <li className='mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Hyderabad</li>
+            <li className='mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Delhi</li>
+            <li className='mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Mumbai</li>
+            <li className='mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>Pune</li>
+            <li className='mb-2 text-[16px] font-semibold text-[#FFFFFF99]'>589 cities <span className='text-gray-400'>(dropdown)</span></li>
+                </ul>
                 </div>
 
             </div>
