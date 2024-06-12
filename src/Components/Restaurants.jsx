@@ -58,7 +58,7 @@ useEffect(()=>{
         </div>
         <div className='grid sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4 px-4'>
           {restroData.map((content, index) => (
-            <div key={index} className='w-[278px] cursor-pointer hover:scale-[.95] duration-100 py-4 '>
+            <div key={index} className='md:w-[278px] cursor-pointer hover:scale-[.95] duration-100 py-4 '>
               <div className='h-[185.33px] overflow-hidden rounded-[15px] relative'>
               <img src={content.image} className='h-full w-full  object-cover'/>
               <div className='image-overlay absolute w-full h-full top-0 flex items-end p-2 text-[25px] font-bold text-white tracking-tighter uppercase'>
